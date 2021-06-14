@@ -44,9 +44,10 @@ d3.select('#quotes')
   // add our array data with data method into li elements
   .data(quotes)
 
-  // enter method gets a data
+  // enter method gets a data & to access elements
   .enter()
   .append('li')
+  // d - data
   .text(function (d) {
     return d.quote + ' ' + d.movie + ' ' + d.year;
   })
